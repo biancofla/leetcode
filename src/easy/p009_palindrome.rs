@@ -44,26 +44,26 @@ impl Solution {
             // from right to left and build the reversed number.
             //
             // Example:
-            //  - n_copy     = 1234
-            //  - n_reversed = 0
+            //  - copy     = 1234
+            //  - reversed = 0
             //
             // 1st iteration.
-            // 1) n_reversed = 0 * 10 + (1234 % 10) = 4
-            // 2) n_copy = 123
+            // 1) reversed = 0 * 10 + (1234 % 10) = 4
+            // 2) copy = 123
             //
             // 2nd iteration.
-            // 1) n_reversed = 4 * 10 + (123 % 10) = 43
-            // 2) n_copy = 12
+            // 1) reversed = 4 * 10 + (123 % 10) = 43
+            // 2) copy = 12
             //
             // 3rd iteration.
-            // 1) n_reversed = 43 * 10 + (12 % 10) = 432
-            // 2) n_copy = 1
+            // 1) reversed = 43 * 10 + (12 % 10) = 432
+            // 2) copy = 1
             //
             // 4th iteration.
-            // 1) n_reversed = 432 * 10 + (1 % 10) = 4321
-            // 2) n_copy = 0
+            // 1) reversed = 432 * 10 + (1 % 10) = 4321
+            // 2) copy = 0
             //
-            // The while loop ends with n_reversed equal to 4321, which is
+            // The while loop ends with reversed equal to 4321, which is
             // the reverse of n.
             reversed = reversed * 10 + (copy % 10);
             copy /= 10;
