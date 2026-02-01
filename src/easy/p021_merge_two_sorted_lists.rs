@@ -109,14 +109,14 @@ mod tests {
         //      head      = [3] -> None
         //
         // 2nd Iteration:
-        //      - node      = ListNode::new(val: 2)
-        //      - node.next = [3] -> None
-        //      - head      = [2] -> [3] -> None
+        //      node      = ListNode::new(val: 2)
+        //      node.next = [3] -> None
+        //      head      = [2] -> [3] -> None
         //
         // 3rd Iteration:
-        //      - node      = ListNode::new(val: 1)
-        //      - node.next = [2] -> [3] -> None
-        //      - head      = [1] -> [2] -> [3] -> None
+        //      node      = ListNode::new(val: 1)
+        //      node.next = [2] -> [3] -> None
+        //      head      = [1] -> [2] -> [3] -> None
         for &val in values.iter().rev() {
             let mut node: ListNode = ListNode::new(val);
             node.next = head;
