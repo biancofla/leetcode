@@ -3,3 +3,4 @@ pub mod p009_is_palindrome;
 pub mod p013_roman_to_int;
 pub mod p014_longest_common_prefix;
 pub mod p020_valid_parentheses;
+pub mod p021_merge_two_sorted_lists;
